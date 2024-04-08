@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZoxZD7ZJEIbRy3Cdc+7WoAvJ7rh2O90kU+1yDBkjqRhysMuck5Z5OX8bXz1MvCOtWFwsrStT0GghulmojfPzhA==",
+  "dgSpecHash": "m41MOmNcKcTLziBM7DuSs/R1nYzflDjrI+InRBxlOcS24iHdbeG+pnTQ5nOeUM7Or8kE/etuAUw7zPIK/K+hkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Professional\\Desktop\\Home_Accounting\\Home_Accounting\\Home_Accounting\\Home_Accounting.csproj",
   "expectedPackageFiles": [
@@ -130,6 +130,8 @@
     "C:\\Users\\Professional\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\nhibernate\\5.3.3\\nhibernate.5.3.3.nupkg.sha512",
+    "C:\\Users\\Professional\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
+    "C:\\Users\\Professional\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\nuget.common\\6.6.1\\nuget.common.6.6.1.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\nuget.configuration\\6.6.1\\nuget.configuration.6.6.1.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\nuget.dependencyresolver.core\\6.6.1\\nuget.dependencyresolver.core.6.6.1.nupkg.sha512",

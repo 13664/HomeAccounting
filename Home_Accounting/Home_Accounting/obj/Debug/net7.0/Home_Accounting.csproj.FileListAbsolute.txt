@@ -799,3 +799,5 @@ C:\Users\Professional\Desktop\Home_Accounting\Home_Accounting\Home_Accounting\ob
 C:\Users\Professional\Desktop\Home_Accounting\Home_Accounting\Home_Accounting\obj\Debug\net7.0\Home_Accounting.pdb
 C:\Users\Professional\Desktop\Home_Accounting\Home_Accounting\Home_Accounting\obj\Debug\net7.0\Home_Accounting.genruntimeconfig.cache
 C:\Users\Professional\Desktop\Home_Accounting\Home_Accounting\Home_Accounting\obj\Debug\net7.0\ref\Home_Accounting.dll
+C:\Users\Professional\Desktop\Home_Accounting\Home_Accounting\Home_Accounting\bin\Debug\net7.0\Npgsql.dll
+C:\Users\Professional\Desktop\Home_Accounting\Home_Accounting\Home_Accounting\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -8,16 +8,19 @@ namespace Home_Accounting.Models
     {
         public int Id { get; set; }
        
-        public DateTime? dateAdded;
-        public double Amount { get; set; }
+        public DateTime DateAdded { get; set; } = DateTime.Now;
+        public double Amount { get; set; } 
         public string Comment {  get; set; }
 
+        public int TypeId { get; set; }
         public CategoryType Type { get; set; }
-        public required Category Category { get; set; }
-     
-  
-       
+
+        public int CategoryId { get; set; }
+        public  Category Category { get; set; }
+
         
+
+
 
     }
 }

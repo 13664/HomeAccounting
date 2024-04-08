@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<Home_Accounting.Models.Transaction>
-
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,32 +8,84 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<div>
+    @using (Html.BeginForm("Index", "Transactions", FormMethod.Get))
+    {
+        <table>
+            <tr>
+                <td>
+                    <span><b>Search By:</b></span>
+                    @Html.RadioButton("searchby","Type", true)
+                    <text> Type </text>
+                    @Html.RadioButton("searchby","Category" )
+                    <text> Category </text>
+                    @Html.RadioButton("searchby","DateAdded" )
+                    <text> DateAdded </text>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.TextBox("searchValue", null, new{Class="form-control", placeholder="Enter Type or Category or DateAdded"})
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    <input type="submit" value="Search" class="btn btn-success">
+                </td>
+            </tr>
+        </table>
+    }
+</div>
+<br />
 <table class="table">
     <thead>
         <tr>
+            
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateAdded)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Amount)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Comment)
             </th>
-            <th></th>
+            
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+           
+            
+                
             <td>
-                @Html.DisplayFor(modelItem => item.Amount)
+                @Html.DisplayFor(modelItem => item.Type.TypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateAdded.Date)
+            </td>
+            <td>
+                @item.Amount.ToString("# ### ### ### ##0.00")
+
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Comment)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+            
         </tr>
 }
     </tbody>

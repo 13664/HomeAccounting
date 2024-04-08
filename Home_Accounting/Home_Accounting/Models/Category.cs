@@ -18,9 +18,6 @@ namespace Home_Accounting.Models
        // public ICollection<Transaction> Transactions { get; set; }
 
 
-        public Category()
-        {
-            
-        }
+       
     }
 }
